@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Explorer</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./news.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/da5a99180a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search for News" />
+      </div>
+      <h1>Top stories for you</h1>
+      <div class="filters">
+        <button class="tag active" data-category="all">All</button>
+        <button class="tag" data-category="Business">Business</button>
+        <button class="tag" data-category="Politics">Politics</button>
+        <button class="tag" data-category="Sports">Sports</button>
+      </div>
+      <div id="news-container"></div>
+      <button id="show-more">Show More</button>
+    </div>
+  </body>
+</html>
